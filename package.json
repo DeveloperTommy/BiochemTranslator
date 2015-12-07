@@ -1,0 +1,34 @@
+{
+  "name": "biochemtranslator",
+  "version": "1.0.0",
+  "description": "A tool used for transcribing DNA and RNA and finding complementary strands",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeveloperTommy/BiochemTranslator.git"
+  },
+  "keywords": [
+    "biochemistry",
+    "bio",
+    "chem",
+    "developer",
+    "tommy",
+    "nguyen",
+    "translator",
+    "dna",
+    "rna"
+  ],
+  "author": "Tommy Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeveloperTommy/BiochemTranslator/issues"
+  },
+  "homepage": "https://github.com/DeveloperTommy/BiochemTranslator#readme",
+  "dependencies": {
+    "ejs": "^2.3.4",
+    "express": "^4.13.3"
+  }
+}
