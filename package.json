@@ -29,6 +29,8 @@
   "homepage": "https://github.com/DeveloperTommy/BiochemTranslator#readme",
   "dependencies": {
     "ejs": "^2.3.4",
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "html": "0.0.10",
+    "path": "^0.12.7"
   }
 }
