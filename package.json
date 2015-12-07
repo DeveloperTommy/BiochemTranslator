@@ -1,7 +1,7 @@
 {
-  "name": "Biochem Translator",
-  "version": "1.0.0",
-  "description": "Translator made by Tommy Nguyen for Biochem 100",
+  "name": "node-js-getting-started",
+  "version": "0.1.5",
+  "description": "A sample Node.js app using Express 4",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -15,15 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/DeveloperTommy/BiochemTranslator"
+    "url": "https://github.com/heroku/node-js-getting-started"
   },
   "keywords": [
     "node",
     "heroku",
-    "express",
-    "biochemistry",
-    "rna",
-    "dna"
+    "express"
   ],
   "license": "MIT"
 }
