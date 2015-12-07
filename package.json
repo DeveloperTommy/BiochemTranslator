@@ -1,5 +1,5 @@
 {
-  "name": "biochem translator",
+  "name": "biochem_translator",
   "version": "0.1.5",
   "description": "Translator made by Tommy Nguyen for Biochem 100",
   "main": "index.js",
