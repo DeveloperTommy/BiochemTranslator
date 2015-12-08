@@ -3,6 +3,7 @@
   <head>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="css/index.css" type="text/css" rel="stylesheet">
+    <link href="css/hover-min.css" type="text/css" rel="stylesheet">
   </head>
 
   <body>
@@ -18,24 +19,39 @@
       </div>
 
       <div class="row biocontainer" style="text-align: center;">
-        <div class="col-md-4">
+        <div class="col-md-4 hvr-hang">
           <div style="border: 3px solid black; background-color: white;">
-            DNA to RNA
+            Complementary RNA of DNA
           </div>
-          <div class="translation">
-            Hello
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div style="border: 3px solid black; background-color: white;">
-            RNA to DNA
+          <div class="translation dnaToRna">
+            <form action="demo_form.asp" method="get">
+              DNA Strand: <input id="dna" type="text" name="lname"><br>
+            </form>
+            <button class="btn-success" name="hello" value="what" onClick="dnaToRna()"> Translate! </button>
           </div>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-md-4 hvr-hang">
           <div style="border: 3px solid black; background-color: white;">
-            Complementary
+            Complementary DNA of RNA
+          </div>
+          <div class="translation rnaToDna">
+            <form action="demo_form.asp" method="get">
+              DNA Strand: <input id="rna" type="text" name="lname"><br>
+            </form>
+            <button class="btn-success" name="hello" value="what" onClick="rnaToDna()"> Translate! </button>
+          </div>
+        </div>
+
+        <div class="col-md-4 hvr-hang">
+          <div style="border: 3px solid black; background-color: white;">
+            Complementary DNA of DNA
+          </div>
+          <div class="translation complementary">
+            <form action="demo_form.asp" method="get">
+              DNA Strand: <input id="complement" type="text" name="lname"><br>
+            </form>
+            <button class="btn-success" name="hello" value="what" onClick="complementary()"> Translate! </button>
           </div>
         </div>
       </div>

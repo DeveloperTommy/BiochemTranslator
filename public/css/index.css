@@ -26,6 +26,10 @@ body {
   padding: 20px;
 }
 
+.translation * {
+  padding: 10px;
+}
+
 .intro {
 
 }
