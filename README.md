@@ -1,6 +1,7 @@
 # Biochem Translator Application
 ##Tommy Nguyen | December 7, 2015
 
+
 ###What is this?
 This is an app that I created for my Biochemistry class to translate DNA to RNA strands, find their complements, find the reverse of their complements, and so on. It was created for a final project where we were allowed to do anything encompassing the class, so I decided to try to make a useful tool!
 
