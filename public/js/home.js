@@ -35,7 +35,10 @@ function dnaToRna() {
   var result;
 
   if (response !== "Please enter a valid DNA strand") {
-    result = "<div class='result-dna' style='display: none;'> " + "<p style='color: red;'> Original DNA Strand: </p>" + dna + "<p style='color: green;'> RNA Strand: </p>" + response + "</div>";
+    var reverse = response.split("").reverse().join("");
+    result = "<div class='result-dna' style='display: none;'> " + "<p style='color: red;'> Original DNA Strand: </p>" + dna
+            + "<p style='color: green;'> Complementary RNA Strand: </p>" + reverse + "</div>"
+            + "<p style='color: blue;'> Reversed: </p>" + response + "</div>";
   }
   else {
     result = "<div class='result-dna' style='display: none;'> " + response + "</div>";
@@ -86,7 +89,10 @@ function rnaToDna() {
   var result;
 
   if (response !== "Please enter a valid RNA strand") {
-    result = "<div class='result-rna' style='display: none;'> " + "<p style='color: red;'> Original RNA Strand: </p>" + rna + "<p style='color: green;'> DNA Strand: </p>" + response + "</div>";
+    var reverse = response.split("").reverse().join("");
+    result = "<div class='result-rna' style='display: none;'> " + "<p style='color: red;'> Original RNA Strand: </p>" + rna
+    + "<p style='color: green;'> Complementary DNA Strand: </p>" + reverse + "</div>"
+    + "<p style='color: blue;'> Reversed: </p>" + response + "</div>";
   }
   else {
     result = "<div class='result-rna' style='display: none;'> " + response + "</div>";
@@ -137,7 +143,10 @@ function complementary() {
   var result;
 
   if (response !== "Please enter a valid DNA strand") {
-    result = "<div class='result-complement' style='display: none;'> " + "<p style='color: red;'> Original DNA Strand: </p>" + complement + "<p style='color: green;'> Complementary DNA Strand: </p>" + response + "</div>";
+    var reverse = response.split("").reverse().join("");
+    result = "<div class='result-complement' style='display: none;'> " + "<p style='color: red;'> Original DNA Strand: </p>" + complement
+    + "<p style='color: green;'> Complementary DNA Strand: </p>" + reverse + "</div>"
+    + "<p style='color: blue;'> Reverse: </p>" + response + "</div>";
   }
   else {
     result = "<div class='result-complement' style='display: none;'> " + response + "</div>";
