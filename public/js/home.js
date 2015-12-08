@@ -1,7 +1,7 @@
 function dnaToRna() {
 
-  $(".result").fadeOut(500);
-  $(".result").remove();
+  $(".result-dna").fadeOut(500);
+  $(".result-dna").remove();
 
   var dna = document.getElementById("dna").value;
 
@@ -28,11 +28,22 @@ function dnaToRna() {
     i++;
   }
 
-  var result = "<div class='result' style='display: none;'> " + response + "</div>";
+  if (dna.length === 0) {
+    response = "Please enter a valid DNA strand";
+  }
+
+  var result;
+
+  if (response !== "Please enter a valid DNA strand") {
+    result = "<div class='result-dna' style='display: none;'> " + "<p style='color: red;'> Original DNA Strand: </p>" + dna + "<p style='color: green;'> RNA Strand: </p>" + response + "</div>";
+  }
+  else {
+    result = "<div class='result-dna' style='display: none;'> " + response + "</div>";
+  }
 
   $(".dnaToRna").append(result);
 
-  $(".result").fadeIn(500);
+  $(".result-dna").fadeIn(500);
 
   document.getElementById("dna").value = "";
   console.log(response);
@@ -42,11 +53,14 @@ function rnaToDna() {
 
   var rna = document.getElementById("rna").value;
 
+  $(".result-rna").fadeOut(500);
+  $(".result-rna").remove();
+
   var response = "";
 
   var i = 0;
 
-  while (i < rna.length && response !== "Please enter a valid DNA strand") {
+  while (i < rna.length && response !== "Please enter a valid RNA strand") {
     if (rna.charAt(i) === "A") {
       response = response + "T";
     }
@@ -65,6 +79,23 @@ function rnaToDna() {
     i++;
   }
 
+  if (rna.length === 0) {
+    response = "Please enter a valid RNA strand";
+  }
+
+  var result;
+
+  if (response !== "Please enter a valid RNA strand") {
+    result = "<div class='result-rna' style='display: none;'> " + "<p style='color: red;'> Original RNA Strand: </p>" + rna + "<p style='color: green;'> DNA Strand: </p>" + response + "</div>";
+  }
+  else {
+    result = "<div class='result-rna' style='display: none;'> " + response + "</div>";
+  }
+
+  $(".rnaToDna").append(result);
+
+  $(".result-rna").fadeIn(500);
+
   document.getElementById("rna").value = "";
   console.log(response);
 
@@ -72,6 +103,9 @@ function rnaToDna() {
 
 function complementary() {
   var complement = document.getElementById("complement").value;
+
+  $(".result-complement").fadeOut(500);
+  $(".result-complement").remove();
 
   var response = "";
 
@@ -95,6 +129,23 @@ function complementary() {
     }
     i++;
   }
+
+  if (complement.length === 0) {
+    response = "Please enter a valid DNA strand";
+  }
+
+  var result;
+
+  if (response !== "Please enter a valid DNA strand") {
+    result = "<div class='result-complement' style='display: none;'> " + "<p style='color: red;'> Original DNA Strand: </p>" + rna + "<p style='color: green;'> Complementary DNA Strand: </p>" + response + "</div>";
+  }
+  else {
+    result = "<div class='result-complement' style='display: none;'> " + response + "</div>";
+  }
+
+  $(".rnaToDna").append(result);
+
+  $(".result-complement").fadeIn(500);
 
   document.getElementById("complement").value = "";
   console.log(response);
