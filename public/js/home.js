@@ -146,7 +146,7 @@ function complementary() {
     var reverse = response.split("").reverse().join("");
     result = "<div class='result-complement' style='display: none;'> " + "<p style='color: red;'> Original DNA Strand: </p>" + complement
     + "<p style='color: green;'> Complementary DNA Strand: </p>" + response
-    + "<p style='color: blue;'> Reverse: </p>" + reverse + "</div>";
+    + "<p style='color: blue;'> Reversed: </p>" + reverse + "</div>";
   }
   else {
     result = "<div class='result-complement' style='display: none;'> " + response + "</div>";
