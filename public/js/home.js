@@ -137,13 +137,13 @@ function complementary() {
   var result;
 
   if (response !== "Please enter a valid DNA strand") {
-    result = "<div class='result-complement' style='display: none;'> " + "<p style='color: red;'> Original DNA Strand: </p>" + rna + "<p style='color: green;'> Complementary DNA Strand: </p>" + response + "</div>";
+    result = "<div class='result-complement' style='display: none;'> " + "<p style='color: red;'> Original DNA Strand: </p>" + complement + "<p style='color: green;'> Complementary DNA Strand: </p>" + response + "</div>";
   }
   else {
     result = "<div class='result-complement' style='display: none;'> " + response + "</div>";
   }
 
-  $(".rnaToDna").append(result);
+  $(".complementary").append(result);
 
   $(".result-complement").fadeIn(500);
 
