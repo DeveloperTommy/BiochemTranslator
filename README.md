@@ -1,38 +1,11 @@
-# node-js-getting-started
+# Biochem Translator Application
+##Tommy Nguyen | December 7, 2015
 
-A barebones Node.js app using [Express 4](http://expressjs.com/).
+###What is this?
+This is an app that I created for my Biochemistry class to translate DNA to RNA strands, find their complements, find the reverse of their complements, and so on. It was created for a final project where we were allowed to do anything encompassing the class, so I decided to try to make a useful tool!
 
-This application supports the [Getting Started with Node on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs) article - check it out.
+###What was this built with?
+This was built on Node with BootStrap, JQuery, and Hover.css. Photography was taken by me.
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-
-## Running Locally
-
-Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
-
-```sh
-$ git clone git@github.com:heroku/node-js-getting-started.git # or clone your own fork
-$ cd node-js-getting-started
-$ npm install
-$ npm start
-```
-
-Your app should now be running on [localhost:5000](http://localhost:5000/).
-
-## Deploying to Heroku
-
-```
-$ heroku create
-$ git push heroku master
-$ heroku open
-```
-
-## Documentation
-
-For more information about using Node.js on Heroku, see these Dev Center articles:
-
-- [Getting Started with Node.js on Heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs)
-- [Heroku Node.js Support](https://devcenter.heroku.com/articles/nodejs-support)
-- [Node.js on Heroku](https://devcenter.heroku.com/categories/nodejs)
-- [Best Practices for Node.js Development](https://devcenter.heroku.com/articles/node-best-practices)
-- [Using WebSockets on Heroku with Node.js](https://devcenter.heroku.com/articles/node-websockets)
+###Anything for the future?
+If there is enough demand, I will continue to work on this after my class has ended for any struggling Biochemistry major.
